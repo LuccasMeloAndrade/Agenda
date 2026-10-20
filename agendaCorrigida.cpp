@@ -9,21 +9,46 @@ const int MINUTO_HORA = 60;
 
 using namespace std;
 
+/**
+ * @brief Estrutura que representa um atendimento na clínica
+ */
+
 struct Atendimento {
-    string paciente;
-    string profissional;
-    string data;
-    int hora;
-    int duracao;
-    string status;
+    string paciente;      /** Nome do paciente*/
+    string profissional;  /** Nome do profissional da saúde */
+    string data;          /** Data do atendimento no formato AAAA-MM-DD */
+    int hora;             /** Hora inicial do atendimento (formato de 24h) */
+    int duracao;          /** Tempo de duração do atendimento em minutos */
+    string status;        /** Status do atendimento (ex: MARCADO) */
 };
 
 vector<Atendimento> agenda;
+
+/**
+ * @brief Verifica se o horário e a duração solicitadas estão dentro do expediente da clínica
+ * 
+ * @param hora Hora de ínicio pretendido
+ * @param duracao Duração pretendida em minutos
+ * @return true Se o horário está dentro do expediente (8h às 18h) e a duração é válida
+ * @return false Se o horário não atender ao quadro de funcionamento ou duração seja inválida
+ */
 
 bool horarioValido(int hora, int duracao) {
     return hora >= HORA_ABERTURA && hora < HORA_FECHAMENTO &&
            duracao > 0 && duracao <= (HORA_FECHAMENTO - hora) * MINUTO_HORA;
 }
+
+/**
+ * @brief Verifica se o profissional já possui outro atendimento no mesmo horario
+ * 
+ * @param profissional Nome do profissional
+ * @param data Data do atendimento
+ * @param hora Hora de inicio do atendimento
+ * @param duracao Tempo de duração da consulta em minutos
+ * @param ignorar Índice de um atendimento a ser ignorado na checagem (usado para remarcação), começa em -1
+ * @return true Se houver colisão nos horários
+ * @return false Se não houver colisão nos horários, horário livre
+ */
 
 bool horarioOcupado(string profissional, string data,
                     int hora, int duracao, int ignorar = -1) {
@@ -50,6 +75,14 @@ bool horarioOcupado(string profissional, string data,
     return false;
 }
 
+/**
+ * @brief Verifica se a data fornecida está no formato AAAA-MM-DD e possui valor logico
+ * 
+ * @param data Data em formato de string
+ * @return true Se o formato e os valores enviados são válidos
+ * @return false Se o formato ou limite de mes e dias estajam incorretos
+ */
+
 bool dataValida(const string& data) {
     if (data.size() != 10 || data[4] != '-' || data[7] != '-') {
         return false;
@@ -68,6 +101,16 @@ bool dataValida(const string& data) {
 
     return true;
 }
+
+/**
+ * @brief Adiciona um atendimento na agenda caso atenda todos os pré-requisitos do negócio
+ * 
+ * @param paciente Nome do paciente
+ * @param profissional Nome do profissional
+ * @param data Data no formato AAAA-MM-DD
+ * @param hora Hora de ínicio do atendimento
+ * @param duracao Tempo de duração em minutos
+ */
 
 void adicionar(string paciente, string profissional,
                string data, int hora, int duracao) {
@@ -96,6 +139,16 @@ void adicionar(string paciente, string profissional,
 
     cout << "Atendimento marcado para " << paciente << ".\n";
 }
+
+/**
+ * @brief Remarca um atendimento já existente para uma nova data e hora
+ * 
+ * @param paciente Nome do paciente
+ * @param dataAtual Data agendada que será remarcada
+ * @param horaAtual Hora agendada que será remarcada
+ * @param novaData Nova data desejada para o atendimento
+ * @param novaHora Nova hora desejada para o atendimento
+ */
 
 void remarcar(string paciente, string dataAtual,
               int horaAtual, string novaData, int novaHora) {
@@ -130,6 +183,12 @@ void remarcar(string paciente, string dataAtual,
 
     cout << "Atendimento nao encontrado.\n";
 }
+
+/**
+ * @brief Lista todos os atendimentos marcados naquela data
+ * 
+ * @param data Data que listará os atendimentos previstos
+ */
 
 void listar(string data) {
     bool encontrado = false;
