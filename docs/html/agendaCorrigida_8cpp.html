@@ -1,0 +1,727 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AgendaFácil: Referência do Arquivo agendaCorrigida.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AgendaFácil<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de agendamento de atendimentos clínicos (DIM0501 - Boas Práticas de Programação)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo agendaCorrigida.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Sistema AgendaFácil — gerenciamento de atendimentos de uma clínica.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para agendaCorrigida.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="agendaCorrigida_8cpp__incl.png" border="0" usemap="#aagendaCorrigida_8cpp" alt=""/></div>
+<map name="aagendaCorrigida_8cpp" id="aagendaCorrigida_8cpp">
+<area shape="rect" title="Sistema AgendaFácil — gerenciamento de atendimentos de uma clínica." alt="" coords="103,5,259,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,85,104"/>
+<area shape="poly" title=" " alt="" coords="161,33,81,75,78,70,158,28"/>
+<area shape="rect" title=" " alt="" coords="109,79,168,104"/>
+<area shape="poly" title=" " alt="" coords="177,32,155,68,150,66,172,30"/>
+<area shape="rect" title=" " alt="" coords="193,79,255,104"/>
+<area shape="poly" title=" " alt="" coords="191,30,212,66,208,68,186,32"/>
+<area shape="rect" title=" " alt="" coords="279,79,366,104"/>
+<area shape="poly" title=" " alt="" coords="205,28,289,70,286,75,203,33"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAtendimento.html">Atendimento</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura que representa um atendimento na clínica.  <a href="structAtendimento.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a745d07364ca15f653b0f56df20e47d95" id="r_a745d07364ca15f653b0f56df20e47d95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a745d07364ca15f653b0f56df20e47d95">horaInicialValida</a> (int horaInicial)</td></tr>
+<tr class="memdesc:a745d07364ca15f653b0f56df20e47d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a hora inicial solicitada está dentro do expediente da clínica (8h às 17h).  <br /></td></tr>
+<tr class="separator:a745d07364ca15f653b0f56df20e47d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83378d8343632ee6619aa6dca5741d66" id="r_a83378d8343632ee6619aa6dca5741d66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a83378d8343632ee6619aa6dca5741d66">duracaoValida</a> (int duracao)</td></tr>
+<tr class="memdesc:a83378d8343632ee6619aa6dca5741d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a duração do atendimento atende às regras de negócio (15 a 120 min, múltiplo de 15).  <br /></td></tr>
+<tr class="separator:a83378d8343632ee6619aa6dca5741d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a2dd0dd90abbea1c3c03668e0075e9" id="r_af8a2dd0dd90abbea1c3c03668e0075e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#af8a2dd0dd90abbea1c3c03668e0075e9">dentroDoExpediente</a> (int horaInicial, int duracao)</td></tr>
+<tr class="memdesc:af8a2dd0dd90abbea1c3c03668e0075e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se o término do atendimento não ultrapassa o horário de fechamento da clínica (18h).  <br /></td></tr>
+<tr class="separator:af8a2dd0dd90abbea1c3c03668e0075e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40ada160a9931eaa6b0ba3bf1297f5a" id="r_ae40ada160a9931eaa6b0ba3bf1297f5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#ae40ada160a9931eaa6b0ba3bf1297f5a">horarioOcupado</a> (const string &amp;profissional, const string &amp;data, int horaInicial, int duracao, int ignorar=-1)</td></tr>
+<tr class="memdesc:ae40ada160a9931eaa6b0ba3bf1297f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se o profissional já possui outro atendimento no mesmo horário.  <br /></td></tr>
+<tr class="separator:ae40ada160a9931eaa6b0ba3bf1297f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a4eac37585905bee358f9cae2ec742f" id="r_a4a4eac37585905bee358f9cae2ec742f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a4a4eac37585905bee358f9cae2ec742f">dataValida</a> (const string &amp;data)</td></tr>
+<tr class="memdesc:a4a4eac37585905bee358f9cae2ec742f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a data fornecida está no formato AAAA-MM-DD e possui valores numéricos válidos de mês e dia.  <br /></td></tr>
+<tr class="separator:a4a4eac37585905bee358f9cae2ec742f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d98a05bb1757049adb023c337589ed4" id="r_a4d98a05bb1757049adb023c337589ed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a4d98a05bb1757049adb023c337589ed4">adicionarAtendimento</a> (const string &amp;paciente, const string &amp;profissional, const string &amp;data, int horaInicial, int duracao)</td></tr>
+<tr class="memdesc:a4d98a05bb1757049adb023c337589ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um atendimento na agenda caso atenda a todos os pré-requisitos do negócio.  <br /></td></tr>
+<tr class="separator:a4d98a05bb1757049adb023c337589ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651ddb34f63b6d9d62e910c4da0a6b5e" id="r_a651ddb34f63b6d9d62e910c4da0a6b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a651ddb34f63b6d9d62e910c4da0a6b5e">remarcarAtendimento</a> (const string &amp;paciente, const string &amp;dataAtual, int horaAtual, const string &amp;novaData, int novaHora)</td></tr>
+<tr class="memdesc:a651ddb34f63b6d9d62e910c4da0a6b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remarca um atendimento já existente para uma nova data e hora.  <br /></td></tr>
+<tr class="separator:a651ddb34f63b6d9d62e910c4da0a6b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ca3c5e1caa333d59ccf4c9818a7959" id="r_a24ca3c5e1caa333d59ccf4c9818a7959"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structAtendimento.html">Atendimento</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a24ca3c5e1caa333d59ccf4c9818a7959">buscarAtendimentos</a> (const string &amp;data)</td></tr>
+<tr class="memdesc:a24ca3c5e1caa333d59ccf4c9818a7959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca todos os atendimentos marcados em uma determinada data.  <br /></td></tr>
+<tr class="separator:a24ca3c5e1caa333d59ccf4c9818a7959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a051ade36dc126a6299cda6c6d0f455a8" id="r_a051ade36dc126a6299cda6c6d0f455a8"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a051ade36dc126a6299cda6c6d0f455a8">HORA_ABERTURA</a> = 8</td></tr>
+<tr class="separator:a051ade36dc126a6299cda6c6d0f455a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad7c1afb90389a86481ba8a4d6d7bc8" id="r_a7ad7c1afb90389a86481ba8a4d6d7bc8"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a7ad7c1afb90389a86481ba8a4d6d7bc8">HORA_FECHAMENTO</a> = 18</td></tr>
+<tr class="separator:a7ad7c1afb90389a86481ba8a4d6d7bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1083008bd8ab4325cbc7619e9dae74af" id="r_a1083008bd8ab4325cbc7619e9dae74af"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a1083008bd8ab4325cbc7619e9dae74af">MINUTO_HORA</a> = 60</td></tr>
+<tr class="separator:a1083008bd8ab4325cbc7619e9dae74af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb0d94cbff14325819439c2cf083edd" id="r_a1cb0d94cbff14325819439c2cf083edd"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a1cb0d94cbff14325819439c2cf083edd">DURACAO_MINIMA</a> = 15</td></tr>
+<tr class="separator:a1cb0d94cbff14325819439c2cf083edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4054b7d31df5e80f93e2d88b6be2dd74" id="r_a4054b7d31df5e80f93e2d88b6be2dd74"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a4054b7d31df5e80f93e2d88b6be2dd74">DURACAO_MAXIMA</a> = 120</td></tr>
+<tr class="separator:a4054b7d31df5e80f93e2d88b6be2dd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980230513a0e0b8e2f4a8fb401afd381" id="r_a980230513a0e0b8e2f4a8fb401afd381"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a980230513a0e0b8e2f4a8fb401afd381">PASSO_DO_INTERVALO</a> = 15</td></tr>
+<tr class="separator:a980230513a0e0b8e2f4a8fb401afd381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98bf75f7fcfe42ddbd64fea3ea859bd" id="r_ad98bf75f7fcfe42ddbd64fea3ea859bd"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#ad98bf75f7fcfe42ddbd64fea3ea859bd">TAMANHO_DATA</a> = 10</td></tr>
+<tr class="separator:ad98bf75f7fcfe42ddbd64fea3ea859bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a53195757a0fadece77b2402dbac5b" id="r_ad8a53195757a0fadece77b2402dbac5b"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#ad8a53195757a0fadece77b2402dbac5b">POSICAO_HIFEN_ANO</a> = 4</td></tr>
+<tr class="separator:ad8a53195757a0fadece77b2402dbac5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493657ad270fe9f49fb35cd5af0cc668" id="r_a493657ad270fe9f49fb35cd5af0cc668"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a493657ad270fe9f49fb35cd5af0cc668">POSICAO_HIFEN_MES</a> = 7</td></tr>
+<tr class="separator:a493657ad270fe9f49fb35cd5af0cc668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b71418a8817fe338d561cffa6c5400b" id="r_a3b71418a8817fe338d561cffa6c5400b"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a3b71418a8817fe338d561cffa6c5400b">STATUS_MARCADO</a> = &quot;MARCADO&quot;</td></tr>
+<tr class="separator:a3b71418a8817fe338d561cffa6c5400b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15753604d406421b50d5fd419f24355c" id="r_a15753604d406421b50d5fd419f24355c"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structAtendimento.html">Atendimento</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="agendaCorrigida_8cpp.html#a15753604d406421b50d5fd419f24355c">agenda</a></td></tr>
+<tr class="separator:a15753604d406421b50d5fd419f24355c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Sistema AgendaFácil — gerenciamento de atendimentos de uma clínica. </p>
+</div><h2 class="groupheader">Funções</h2>
+<a id="a4d98a05bb1757049adb023c337589ed4" name="a4d98a05bb1757049adb023c337589ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d98a05bb1757049adb023c337589ed4">&#9670;&#160;</a></span>adicionarAtendimento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adicionarAtendimento </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>paciente</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>profissional</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>horaInicial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duracao</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adiciona um atendimento na agenda caso atenda a todos os pré-requisitos do negócio. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">paciente</td><td>Nome do paciente. </td></tr>
+    <tr><td class="paramname">profissional</td><td>Nome do profissional. </td></tr>
+    <tr><td class="paramname">data</td><td>Data no formato AAAA-MM-DD. </td></tr>
+    <tr><td class="paramname">horaInicial</td><td>Hora de início do atendimento. </td></tr>
+    <tr><td class="paramname">duracao</td><td>Tempo de duração em minutos. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">invalid_argument</td><td>Se paciente/profissional forem vazios, a data for inválida ou o horário/duração violarem as regras. </td></tr>
+    <tr><td class="paramname">runtime_error</td><td>Se houver sobreposição de horário na agenda do profissional. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24ca3c5e1caa333d59ccf4c9818a7959" name="a24ca3c5e1caa333d59ccf4c9818a7959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ca3c5e1caa333d59ccf4c9818a7959">&#9670;&#160;</a></span>buscarAtendimentos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="structAtendimento.html">Atendimento</a> &gt; buscarAtendimentos </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca todos os atendimentos marcados em uma determinada data. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Data a ser consultada no formato AAAA-MM-DD. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>vector&lt;Atendimento&gt; Lista de atendimentos agendados para a data informada. </dd></dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">invalid_argument</td><td>Se a data fornecida não estiver no formato válido AAAA-MM-DD. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a4eac37585905bee358f9cae2ec742f" name="a4a4eac37585905bee358f9cae2ec742f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a4eac37585905bee358f9cae2ec742f">&#9670;&#160;</a></span>dataValida()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dataValida </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a data fornecida está no formato AAAA-MM-DD e possui valores numéricos válidos de mês e dia. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Data em formato de string. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true Se o formato AAAA-MM-DD e os limites básicos de mês (01-12) e dia (01-31) forem válidos. </dd>
+<dd>
+false Se o formato ou os limites de mês e dia estiverem incorretos. </dd></dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Não</td><td>lança exceções. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8a2dd0dd90abbea1c3c03668e0075e9" name="af8a2dd0dd90abbea1c3c03668e0075e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a2dd0dd90abbea1c3c03668e0075e9">&#9670;&#160;</a></span>dentroDoExpediente()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dentroDoExpediente </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>horaInicial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duracao</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se o término do atendimento não ultrapassa o horário de fechamento da clínica (18h). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">horaInicial</td><td>Hora de início do atendimento (formato 24h). </td></tr>
+    <tr><td class="paramname">duracao</td><td>Duração do atendimento em minutos. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true Se o atendimento terminar até as 18h. </dd>
+<dd>
+false Se o atendimento terminar após as 18h. </dd></dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Não</td><td>lança exceções. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a83378d8343632ee6619aa6dca5741d66" name="a83378d8343632ee6619aa6dca5741d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83378d8343632ee6619aa6dca5741d66">&#9670;&#160;</a></span>duracaoValida()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool duracaoValida </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duracao</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a duração do atendimento atende às regras de negócio (15 a 120 min, múltiplo de 15). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">duracao</td><td>Duração pretendida em minutos. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true Se a duração estiver entre 15 e 120 minutos e for múltipla de 15. </dd>
+<dd>
+false Se a duração estiver fora do intervalo permitido ou não for múltipla de 15. </dd></dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Não</td><td>lança exceções. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a745d07364ca15f653b0f56df20e47d95" name="a745d07364ca15f653b0f56df20e47d95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a745d07364ca15f653b0f56df20e47d95">&#9670;&#160;</a></span>horaInicialValida()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool horaInicialValida </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>horaInicial</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a hora inicial solicitada está dentro do expediente da clínica (8h às 17h). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">horaInicial</td><td>Hora de início pretendida (formato 24h). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true Se a hora inicial está entre 8h (inclusive) e 18h (exclusive). </dd>
+<dd>
+false Se a hora inicial estiver fora do horário de funcionamento. </dd></dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Não</td><td>lança exceções. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae40ada160a9931eaa6b0ba3bf1297f5a" name="ae40ada160a9931eaa6b0ba3bf1297f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40ada160a9931eaa6b0ba3bf1297f5a">&#9670;&#160;</a></span>horarioOcupado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool horarioOcupado </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>profissional</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>horaInicial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duracao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ignorar</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se o profissional já possui outro atendimento no mesmo horário. </p>
+<p>Decisão de projeto: utiliza-se conversão contínua em minutos para checagem de interseção em intervalos [inicio, fim). Dois intervalos [A, B) e [C, D) colidem se e somente se: (A &lt; D) e (C &lt; B).</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">profissional</td><td>Nome do profissional. </td></tr>
+    <tr><td class="paramname">data</td><td>Data do atendimento no formato AAAA-MM-DD. </td></tr>
+    <tr><td class="paramname">horaInicial</td><td>Hora de início do atendimento. </td></tr>
+    <tr><td class="paramname">duracao</td><td>Tempo de duração da consulta em minutos. </td></tr>
+    <tr><td class="paramname">ignorar</td><td>Índice de um atendimento a ser ignorado na checagem (usado para remarcação), padrão -1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true Se houver colisão nos horários. </dd>
+<dd>
+false Se não houver colisão nos horários (horário livre). </dd></dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Não</td><td>lança exceções. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a651ddb34f63b6d9d62e910c4da0a6b5e" name="a651ddb34f63b6d9d62e910c4da0a6b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a651ddb34f63b6d9d62e910c4da0a6b5e">&#9670;&#160;</a></span>remarcarAtendimento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remarcarAtendimento </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>paciente</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>dataAtual</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>horaAtual</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>novaData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>novaHora</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remarca um atendimento já existente para uma nova data e hora. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">paciente</td><td>Nome do paciente. </td></tr>
+    <tr><td class="paramname">dataAtual</td><td>Data agendada que será remarcada. </td></tr>
+    <tr><td class="paramname">horaAtual</td><td>Hora agendada que será remarcada. </td></tr>
+    <tr><td class="paramname">novaData</td><td>Nova data desejada para o atendimento (formato AAAA-MM-DD). </td></tr>
+    <tr><td class="paramname">novaHora</td><td>Nova hora desejada para o atendimento (8h às 17h). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">invalid_argument</td><td>Se paciente for vazio ou se as datas/horários violarem as regras de negócio. </td></tr>
+    <tr><td class="paramname">runtime_error</td><td>Se o atendimento original não existir ou se o novo horário estiver ocupado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a id="a15753604d406421b50d5fd419f24355c" name="a15753604d406421b50d5fd419f24355c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15753604d406421b50d5fd419f24355c">&#9670;&#160;</a></span>agenda</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="structAtendimento.html">Atendimento</a>&gt; agenda</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4054b7d31df5e80f93e2d88b6be2dd74" name="a4054b7d31df5e80f93e2d88b6be2dd74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4054b7d31df5e80f93e2d88b6be2dd74">&#9670;&#160;</a></span>DURACAO_MAXIMA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int DURACAO_MAXIMA = 120</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cb0d94cbff14325819439c2cf083edd" name="a1cb0d94cbff14325819439c2cf083edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb0d94cbff14325819439c2cf083edd">&#9670;&#160;</a></span>DURACAO_MINIMA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int DURACAO_MINIMA = 15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a051ade36dc126a6299cda6c6d0f455a8" name="a051ade36dc126a6299cda6c6d0f455a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a051ade36dc126a6299cda6c6d0f455a8">&#9670;&#160;</a></span>HORA_ABERTURA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int HORA_ABERTURA = 8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ad7c1afb90389a86481ba8a4d6d7bc8" name="a7ad7c1afb90389a86481ba8a4d6d7bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad7c1afb90389a86481ba8a4d6d7bc8">&#9670;&#160;</a></span>HORA_FECHAMENTO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int HORA_FECHAMENTO = 18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1083008bd8ab4325cbc7619e9dae74af" name="a1083008bd8ab4325cbc7619e9dae74af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1083008bd8ab4325cbc7619e9dae74af">&#9670;&#160;</a></span>MINUTO_HORA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int MINUTO_HORA = 60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a980230513a0e0b8e2f4a8fb401afd381" name="a980230513a0e0b8e2f4a8fb401afd381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980230513a0e0b8e2f4a8fb401afd381">&#9670;&#160;</a></span>PASSO_DO_INTERVALO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PASSO_DO_INTERVALO = 15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8a53195757a0fadece77b2402dbac5b" name="ad8a53195757a0fadece77b2402dbac5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a53195757a0fadece77b2402dbac5b">&#9670;&#160;</a></span>POSICAO_HIFEN_ANO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t POSICAO_HIFEN_ANO = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a493657ad270fe9f49fb35cd5af0cc668" name="a493657ad270fe9f49fb35cd5af0cc668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493657ad270fe9f49fb35cd5af0cc668">&#9670;&#160;</a></span>POSICAO_HIFEN_MES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t POSICAO_HIFEN_MES = 7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b71418a8817fe338d561cffa6c5400b" name="a3b71418a8817fe338d561cffa6c5400b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b71418a8817fe338d561cffa6c5400b">&#9670;&#160;</a></span>STATUS_MARCADO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const STATUS_MARCADO = &quot;MARCADO&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad98bf75f7fcfe42ddbd64fea3ea859bd" name="ad98bf75f7fcfe42ddbd64fea3ea859bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98bf75f7fcfe42ddbd64fea3ea859bd">&#9670;&#160;</a></span>TAMANHO_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t TAMANHO_DATA = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

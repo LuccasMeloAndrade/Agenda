@@ -1,0 +1,27 @@
+# Doxyfile 1.9 — Configuração do Doxygen para o projeto AgendaFácil
+
+PROJECT_NAME           = "AgendaFácil"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "Sistema de agendamento de atendimentos clínicos (DIM0501 - Boas Práticas de Programação)"
+OUTPUT_DIRECTORY       = docs
+OUTPUT_LANGUAGE        = Brazilian
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+INPUT                  = agendaCorrigida.cpp README.md
+INPUT_ENCODING         = UTF-8
+USE_MDFILE_AS_MAINPAGE = README.md
+RECURSIVE              = NO
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
